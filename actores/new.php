@@ -22,6 +22,6 @@ $json=json_encode($datos);
         'message'=> 'No se han recibido los datos necesarios'
     ];
    $json=json_encode($response);
-}header('Content-Type: application/json');
-echo $json;
+}
+include('../envio.php');
 ?>
