@@ -6,11 +6,11 @@ $stm=$conexion->prepare($sql);
 $stm->bindParam(":first_name",$_POST['name']);
 $stm->bindParam(":last_name",$_POST['lastname']);
 $stm->execute();
-$acttor_id=$conexion->lastInsertId();
+$actor_id=$conexion->lastInsertId();
 $datos=[
     'actor_id'=>$actor_id,
     'first_name'=>$_POST['name'],
-    'last_name'=> $_POST['last_name'],
+    'last_name'=> $_POST['lastname'],
 ];
 
 $json=json_encode($datos);
