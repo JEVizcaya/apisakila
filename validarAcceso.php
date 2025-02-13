@@ -1,5 +1,5 @@
 <?php
-include_once("../validarAcceso.php");
+include_once("validarAcceso.php");
 require 'verificar_JWT.php';
 // Extraer el token desde la cabecera Authorization
 $headers = apache_request_headers();

@@ -1,5 +1,5 @@
 <?php
-include_once("../validarAcceso.php");
+include_once("validarAcceso.php");
 include_once("config.php");
 $host = HOST; // o la IP de tu servidor MySQL
 $user = DB_USER;
