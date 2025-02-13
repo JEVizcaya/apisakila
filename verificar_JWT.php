@@ -1,4 +1,5 @@
 <?php
+include_once("../validarAcceso.php");
 require 'vendor/autoload.php';
 require 'config.php';
 
